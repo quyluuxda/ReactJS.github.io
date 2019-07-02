@@ -37,9 +37,9 @@ class Bien extends React.Component {
     getInformation() {
         alert(this.props.children);
     }
-    getInitialState() {
-        return { tongHocVien: this.props.totalStudents };
-    }
+    // getInitialState() {
+    //     return { tongHocVien: this.props.totalStudents };
+    // }
     render() {
         return (<div>
             <h1> {this.props.name} - {this.props.unit} </h1>
