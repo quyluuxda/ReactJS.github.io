@@ -21,8 +21,8 @@ class Home extends Component {
                       <h2>Plants exist in the weather and light rays that surround them</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque ante nec ipsum iaculis, ac iaculis ipsum porttitor. Vivamus cursus nisl lectus, id mattis nisl lobortis eu. Duis diam augue, dapibus ut dolor at, mattis maximus dolor.</p>
                       <div className="welcome-btn-group">
-                        <a href="#" className="btn alazea-btn mr-30">GET STARTED</a>
-                        <a href="#" className="btn alazea-btn active">CONTACT US</a>
+                        <a href="/products" className="btn alazea-btn mr-30">SẢN PHẨM</a>
+                        <a href="/contact" className="btn alazea-btn active">LIÊN HỆ</a>
                       </div>
                     </div>
                   </div>
@@ -521,7 +521,7 @@ class Home extends Component {
                 </div>
               </div>
               <div className="col-12 text-center">
-                <a href="#" className="btn alazea-btn">View All</a>
+                <a href="/products" className="btn alazea-btn">View All</a>
               </div>
             </div>
           </div>

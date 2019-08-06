@@ -9,14 +9,14 @@ class Products extends Component {
         <div className="breadcrumb-area">
           {/* Top Breadcrumb Area */}
           <div className="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style={{ backgroundImage: 'url(img/bg-img/24.jpg)' }}>
-            <h2>Shop</h2>
+            {/* <h2>Shop</h2> */}
           </div>
           <div className="container">
             <div className="row">
               <div className="col-12">
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><a href="#/"><i className="fa fa-home" /> Trang chủ</a></li>
+                    <li className="breadcrumb-item"><a href="/"><i className="fa fa-home" /> Trang chủ</a></li>
                     <li className="breadcrumb-item active" aria-current="page">Sản phẩm</li>
                   </ol>
                 </nav>

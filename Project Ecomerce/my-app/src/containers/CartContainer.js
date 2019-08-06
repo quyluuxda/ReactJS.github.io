@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import Cart from './../components/Cart'
 import CartItem from './../components/CartItem'
 import CartResult from './../components/CartResult'
+import {actDeleteProductInCart, actUpdateQuantity} from './../action/index'
 import { connect } from 'react-redux'
 
 class CartContainer extends Component {
     render() {
       let { cart } = this.props
-      console.log(cart)
       return (
         <Cart>
             {this.showCartItem(cart)}
@@ -16,6 +16,7 @@ class CartContainer extends Component {
       );
     }
     showCartItem(cart) {
+      let {onDeleteProductInCart, onUpdateQuantity}= this.props
       let result = null;
       let showSubTotal = 0;
       if (cart.length > 0) {
@@ -24,6 +25,8 @@ class CartContainer extends Component {
           return <CartItem key={index}
             item={item}
             showSubTotal={showSubTotal}
+            onDeleteProductInCart={onDeleteProductInCart}
+            onUpdateQuantity={onUpdateQuantity}
           />
         })
       }
@@ -50,15 +53,15 @@ class CartContainer extends Component {
     }
   }
   
-//   const mapDispatchToProps = (dispatch, props)=>{
-//     return{
-//       onAddToCart: (product)=>{
-//         dispatch(actAddToCart(product, 1))
-//       },
-//       onChangeMessage: (message)=>{
-//         dispatch(actChangeMessage(message))
-//       }
-//     }
-//   }
+  const mapDispatchToProps = (dispatch, props)=>{
+    return{
+      onDeleteProductInCart: (product)=>{
+        dispatch(actDeleteProductInCart(product))
+      },
+      onUpdateQuantity: (product, quantity)=>{
+        dispatch(actUpdateQuantity(product,quantity))
+      }
+    }
+  }
   
-  export default connect(mapStateToProps, null)(CartContainer);
+  export default connect(mapStateToProps, mapDispatchToProps)(CartContainer);

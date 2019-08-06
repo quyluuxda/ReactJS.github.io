@@ -6,7 +6,6 @@ import Contact from './components/Contact';
 import CartContainer from './containers/CartContainer';
 import ProductDetails from './components/ProductDetails';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-// import Nav from './components/Nav';
 
 class App extends Component {
   render() {
@@ -28,8 +27,8 @@ class App extends Component {
                     <div className="top-header-content d-flex align-items-center justify-content-between">
                       {/* Top Header Content */}
                       <div className="top-header-meta">
-                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="infodeercreative@gmail.com"><i className="fa fa-envelope-o" aria-hidden="true" /> <span>Email: infodeercreative@gmail.com</span></a>
-                        <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i className="fa fa-phone" aria-hidden="true" /> <span>Call Us: +1 234 122 122</span></a>
+                        <a href="mailto:quyluuxda@gmail.com" data-toggle="tooltip" data-placement="bottom" title="quyluuxda@gmail.com"><i className="fa fa-envelope-o" aria-hidden="true" /> <span>Email: quyluuxda@gmail.com</span></a>
+                        <a href="tel:+84-0356688339" data-toggle="tooltip" data-placement="bottom" title="+84-0356688339"><i className="fa fa-phone" aria-hidden="true" /> <span>Call Us: +84-035 66 88 339</span></a>
                       </div>
                       {/* Top Header Content */}
                       <div className="top-header-meta d-flex">

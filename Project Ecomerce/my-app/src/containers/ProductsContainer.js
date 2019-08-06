@@ -14,8 +14,8 @@ class ProductsContainer extends Component {
       );
     }
     showProducts(products) {
+      let{onAddToCart} = this.props
       let result = null;
-      let onAddToCart = this.onAddToCart
       if (products.length > 0) {
         result = products.map((product, index) => {
           return <Product key={index}
