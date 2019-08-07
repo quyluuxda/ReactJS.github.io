@@ -43,7 +43,7 @@ class ProductsContainer extends Component {
         dispatch(actAddToCart(product, 1))
       },
       getInfoProduct: (product)=>{
-        dispatch(actGetInfoProduct(product))
+        dispatch(actGetInfoProduct(product, 1))
       }
       
     }

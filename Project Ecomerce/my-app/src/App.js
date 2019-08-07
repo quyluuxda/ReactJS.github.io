@@ -9,7 +9,6 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 class App extends Component {
   render() {
-    let { product } = this.props;
     return (
       <Router>
         <div>

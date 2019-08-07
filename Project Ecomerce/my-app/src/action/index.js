@@ -20,9 +20,10 @@ export const actDeleteProductInCart = (product) =>{
         product:product
     }
 }
-export const actGetInfoProduct = (product) =>{
+export const actGetInfoProduct = (product, quantity) =>{
     return{
         type: types.GET_INFO_PRODUCT,
-        product:product
+        product:product,
+        quantity:quantity
     }
 }

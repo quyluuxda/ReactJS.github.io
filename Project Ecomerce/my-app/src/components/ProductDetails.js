@@ -57,7 +57,7 @@ class ProductDetails extends Component {
                     </div>
                     <div className="product-meta d-flex">
                       <a href="#" className="wishlist-btn"><i className="icon_heart_alt" /></a>
-                      <a href="cart.html" className="add-to-cart-btn">Add to cart</a>
+                      <a href="cart.html" className="add-to-cart-btn">Thêm vào giỏ</a>
                       <a href="#" className="compare-btn"><i className="arrow_left-right_alt" /></a>
                     </div>
                   </div>
@@ -78,7 +78,7 @@ class ProductDetails extends Component {
                     <a href="shop-details.html"><img src="img/bg-img/41.png" alt="" /></a>
                     <div className="product-meta d-flex">
                       <a href="#" className="wishlist-btn"><i className="icon_heart_alt" /></a>
-                      <a href="cart.html" className="add-to-cart-btn">Add to cart</a>
+                      <a href="cart.html" className="add-to-cart-btn">Thêm vào giỏ</a>
                       <a href="#" className="compare-btn"><i className="arrow_left-right_alt" /></a>
                     </div>
                   </div>
@@ -99,7 +99,7 @@ class ProductDetails extends Component {
                     <a href="shop-details.html"><img src="img/bg-img/42.png" alt="" /></a>
                     <div className="product-meta d-flex">
                       <a href="#" className="wishlist-btn"><i className="icon_heart_alt" /></a>
-                      <a href="cart.html" className="add-to-cart-btn">Add to cart</a>
+                      <a href="cart.html" className="add-to-cart-btn">Thêm vào giỏ</a>
                       <a href="#" className="compare-btn"><i className="arrow_left-right_alt" /></a>
                     </div>
                   </div>
@@ -124,7 +124,7 @@ class ProductDetails extends Component {
                     </div>
                     <div className="product-meta d-flex">
                       <a href="#" className="wishlist-btn"><i className="icon_heart_alt" /></a>
-                      <a href="cart.html" className="add-to-cart-btn">Add to cart</a>
+                      <a href="cart.html" className="add-to-cart-btn">Thêm vào giỏ</a>
                       <a href="#" className="compare-btn"><i className="arrow_left-right_alt" /></a>
                     </div>
                   </div>

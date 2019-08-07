@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Product extends Component {
   render() {
-    let { product } = this.props;
+    let { product} = this.props;
     return (
       <div className="col-12 col-sm-6 col-lg-4">
         <div className="single-product-area mb-50">
@@ -39,8 +39,8 @@ class Product extends Component {
     this.props.onAddToCart(product);
     alert('Thêm vào giỏ hàng thành công')
   }
-  getInfoProduct=(product)=>{
-    this.props.getInfoProduct(product);
+  getInfoProduct=(product, quantity)=>{
+    this.props.getInfoProduct(product, quantity);
     console.log(product)
   }
 }

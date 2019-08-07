@@ -10,13 +10,6 @@ class CartItem extends Component {
           <a href="#/"><img src={item.product.image} alt="Product" /></a>
           <h5>{item.product.name}</h5>
         </td>
-        {/* <td className="qty">
-          <div className="quantity">
-            <label className="qty-minus" onClick={()=>this.onUpdateQuantity(item.product, item.quantity-1)}><i className="fa fa-minus" aria-hidden="true" /></label>
-            <input type="number" className="qty-text" id="qty" step={1} min={1} max={99} name="quantity" defaultValue={item.quantity} />
-            <label className="qty-plus" onClick={()=>this.onUpdateQuantity(item.product, item.quantity+1)}><i className="fa fa-plus" aria-hidden="true" /></label>
-          </div>
-        </td> */}
         <td className="qty">
           <span className="qty">{item.quantity} </span>
           <div className="btn-group radio-group ml-2" data-toggle="buttons">
