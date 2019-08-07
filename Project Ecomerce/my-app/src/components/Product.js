@@ -8,7 +8,7 @@ class Product extends Component {
         <div className="single-product-area mb-50">
           {/* Product Image */}
           <div className="product-img">
-            <a href="product-details"><img onClick={()=> this.getInfoProduct(product)} src={product.image} alt="Click để xem thông tin" title="Click ảnh để xem thêm" /></a>
+            <a href={`/product-details`} ><img onClick={()=> this.getInfoProduct(product)}  src={product.image} alt="" title="Click ảnh để xem thêm" /></a>
             {/* Product Tag */}
             <div className="product-tag">
               <a href="#/">Hot</a>
@@ -39,8 +39,9 @@ class Product extends Component {
     this.props.onAddToCart(product);
     alert('Thêm vào giỏ hàng thành công')
   }
-  getInfoItem=(product)=>{
+  getInfoProduct=(product)=>{
     this.props.getInfoProduct(product);
+    console.log(product)
   }
 }
 

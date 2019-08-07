@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import Home from './components/Home';
-import ProductsContainer from './containers/ProductsContainer';
+import ProductDetailsContainer from './containers/ProductDetailsContainer';
 import Posts from './components/Posts';
 import Contact from './components/Contact';
 import CartContainer from './containers/CartContainer';
-import ProductDetails from './components/ProductDetails';
+import ProductsContainer from './containers/ProductsContainer';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 class App extends Component {
   render() {
+    let { product } = this.props;
     return (
       <Router>
         <div>
@@ -73,6 +74,7 @@ class App extends Component {
                           <li><Link to='/products' >Sản phẩm</Link></li>
                           <li><Link to='/posts' >Bài viết</Link></li>
                           <li><Link to='/contact' >Liên hệ</Link></li>
+                          <li><Link to='product-details' >Chi tiết</Link></li>
                         </ul>
 
                         {/* Search Icon */}
@@ -103,7 +105,7 @@ class App extends Component {
         <Route path='/posts' component={Posts} />
         <Route path='/contact' component={Contact} />
         <Route path='/cart' component={CartContainer} />
-        <Route path='/product-details' component={ProductDetails} />
+        <Route path='/product-details' component={ProductDetailsContainer} />
       </Router>
     );
   }
